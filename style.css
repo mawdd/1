@@ -1,0 +1,385 @@
+body{
+  background: #96B3D3;
+}
+.bubbels{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.bubble{
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 50%;
+  opacity: 1.9;
+  animation: flying 10s infinite ease-in;
+}
+.bubble:nth-child(1){
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  animation-duration: 8s;
+}
+.bubble:nth-child(2){
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(3){
+  width: 50px;
+  height: 50px;
+  left: 35%;
+  animation-duration: 10s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(4){
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  animation-duration: 7s;
+  animation-delay: 0s;
+}
+
+.bubble:nth-child(5){
+  width: 35px;
+  height: 35px;
+  left: 55%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(6){
+  width: 45px;
+  height: 45px;
+  left: 65%;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+.bubble:nth-child(7){
+  width: 25px;
+  height: 25px;
+  left: 75%;
+  animation-duration: 7s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(8){
+  width: 80px;
+  height: 80px;
+  left: 80%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(9){
+  width: 15px;
+  height: 15px;
+  left: 70%;
+  animation-duration: 9s;
+  animation-delay: 0s;
+}
+
+.bubble:nth-child(10){
+  width: 50px;
+  height: 50px;
+  left: 85%;
+  animation-duration: 5s;
+  animation-delay: 3s;
+}
+
+@keyframes flying {
+  0%{
+    bottom: -100px;
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(100px);
+  }
+  100%{
+    bottom: 1080px;
+    transform: translateX(-200px);
+  }
+}
+
+
+/* NAVBAR */
+.navbar {
+  position: relative;
+  z-index: 1;
+
+}
+
+.navbar-brand{
+  font-family: viga;
+  font-size: 32px;
+  color: white !important;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+.nav-link { 
+  margin-right: 30px;
+  color: white !important;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+ }
+
+ .nav-link:hover::after {
+  content: '';
+  display: block;
+  border-bottom: 4px solid #ffffff;/* ini kasih border di bawah text */
+  border-radius: 1px;
+  width: 50%; /* ubh ukuran bordernya */
+  margin: auto; /* biar bordernya ketengah  */
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+
+ }
+
+/* navbar akhir*/
+
+/* utility */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+  color: #96B3D3;
+}
+
+
+.jumbotron {
+    margin-top: 75px;
+    color: white;
+    background-color: #96B3D3;
+
+ }
+ .jumbotron .display-4 {
+  font-size: 40px;
+
+ }
+ .gambar {
+  margin-left: 460px;
+  margin-top: -200px;
+ }
+
+ .kotak {
+  height: 450px;
+  width: 850px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-left: 350px; 
+  margin-top: -80px;
+}
+.pricing img{
+  margin-top: 50px;
+  margin-left: 150px;
+}
+.pricing-2 img{
+  margin-top: -76px;
+  margin-left: 400px;
+}
+.pricing-3 img{
+  margin-top: -126px;
+  margin-left: 650px;
+}
+.lite {
+  margin-left: 150px;
+  color: #96B3D3;
+}
+.medium {
+  margin-top: -40px;
+  margin-left: 370px;
+  color: #96B3D3;
+}
+.bussines {
+  color: #96B3D3;
+  margin-top: -42px;
+  margin-left: 620px;
+
+}
+
+.spek-lite{
+  color: #96B3D3;
+  margin-top: 30px;
+  margin-left: -500px;
+  text-align: center;
+
+}
+.spek-medium{
+  color: #96B3D3;
+  margin-top: -185px;
+  text-align: center;
+
+}
+.spek-bussines{
+  color: #96B3D3;
+  margin-top: -185px;
+  margin-left: 500px;
+  text-align: center;
+}
+.price-lite {
+  color: #96B3D3;
+  margin-left: 100px;
+}
+.price-medium {
+  color: #96B3D3;
+  text-align: center;
+}
+.price-bussines {
+  color: #96B3D3;
+  margin-left: 500px;
+  margin-top: 0px;
+  text-align: center;
+
+}
+
+/*end pricing*/
+
+
+/*why us*/
+ .why {
+  height: 600px;
+  width: 1000px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-left: 150px; 
+  margin-top: 80px;
+  color: #96B3D3;
+}
+
+.team-icon {
+  margin-top: 150px;
+  margin-left: 100px;
+}
+.team-text {
+  margin-top: 50px;
+  margin-left: -700px;
+}
+.team-title-border {
+  border-bottom: 4px solid #96B3D3;/* ini kasih border di bawah text */
+  border-radius: 1.5px;
+  width: 80px;
+  margin: auto; /* biar bordernya ketengah  */
+  margin-top: -36px;
+  margin-left: 108px;
+ }
+
+
+.it-title{
+  margin-top: -254px;
+  margin-left: -40px;
+
+}
+.it-text{
+  margin-top: 54px;
+  margin-left: -40px;
+}
+.it-icon {
+  margin-top: -650px;
+  margin-left: 430px;
+}
+
+.it-title-border {
+  border-bottom: 4px solid #96B3D3;/* ini kasih border di bawah text */
+  border-radius: 1.5px;
+  width: 80px;
+  margin: auto; /* biar bordernya ketengah  */
+  margin-top: -36px;
+  margin-left: 440px;
+ }
+
+
+.custom-title{
+  margin-top: -270px;
+  margin-left: 610px;
+
+}
+.custom-text{
+  margin-top: 54px;
+  margin-left: 610px;
+}
+.custom-icon {
+  margin-top: -650px;
+  margin-left: 760px;
+}
+
+.custom-title-border {
+  border-bottom: 4px solid #96B3D3;/* ini kasih border di bawah text */
+  border-radius: 1.5px;
+  width: 80px;
+  margin: auto; /* biar bordernya ketengah  */
+  margin-top: -36px;
+  margin-left: 765px;
+ }
+
+.sub  {
+  margin-top: 40px;
+  margin-left: 350PX;
+  color: #96B3D3;
+}
+.footer {
+    background-color: #fff;
+    width: 126%;
+    margin-left: -150px;
+}
+.text-footer {
+  font-size: 16px;
+  color:#96B3D3;
+}
+
+/* button */
+
+.middle{
+  margin-top: 150px;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.btn1{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #96B3D3;
+  overflow: hidden;
+  position: relative;
+}
+.btn1 i{
+  line-height: 40px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+.btn1:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.btn1::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #96B3D3;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btn1:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
